@@ -28,7 +28,7 @@ My setting for Aliyun
 #===2017/11/04===Aliyun
 deb http://mirrors.aliyun.com/kali kali-rolling main non-free contrib
 deb http://mirrors.aliyun.com/kali-security/ kali-rolling main contrib non-free
-deb-src http://mirrors.aliyun.com/kali-secirty/ kali-rolling main contrib non-free
+deb-src http://mirrors.aliyun.com/kali-security/ kali-rolling main contrib non-free
 ```
 
 Thanks [Ora10RAC](http://jingyan.baidu.com/user/npublic?uid=2008f13af624756ef6d6efd0)

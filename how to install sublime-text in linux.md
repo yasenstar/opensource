@@ -36,3 +36,6 @@ sudo apt-get install sublime-text
 ```
 
 Date: 2017/11/05, Beijing
+
+---
+practice: 2017/11/13, installed on Dell Latitude E6410 with Ubuntu 17.10 64bit

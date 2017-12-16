@@ -48,3 +48,52 @@ In the user's $HOME directory, under a ".tuxpaint" subfolder:
 e.g., /home/username/.tuxpaint/saved/
 
 The images are stored as PNG bitmaps, which most modern programs should be able to load (image editors, word processors, web browsers, etc.)
+
+## 安装64位Chrome浏览器
+
+### 第一步：
+
+```
+在终端中，输入以下命令： 
+sudo wget http://www.linuxidc.com/files/repo/google-chrome.list -P /etc/apt/sources.list.d/
+```
+将下载源加入到系统的源列表
+
+### 第二步：
+
+```
+在终端中，输入以下命令： 
+wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+```
+
+导入谷歌软件的公钥，用于下面步骤中对下载软件进行验证。 
+如果顺利的话，命令将返回“OK”。
+
+### 第三步：
+
+```
+在终端中，输入以下命令： 
+sudo apt-get update
+```
+
+用于对当前系统的可用更新列表进行更新。这也是许多 Linux 发行版经常需要执行的操作，目的是随时获得最新的软件版本信息。
+
+### 第四步：
+
+```
+在终端中，输入以下命令： 
+sudo apt-get install google-chrome-stable
+```
+
+执行对谷歌 Chrome 浏览器（稳定版）的安装。
+
+### 第五步：
+
+```
+在终端中执行以下命令： 
+/usr/bin/google-chrome-stable
+```
+
+将会启动谷歌 Chrome 浏览器，它的图标将会出现在屏幕左侧的 Launcher 上，在图标上右键——“锁定到启动器”，以后就可以简单地单击启动了
+
+2017/12/16, thanks for [funnyPython的博客](http://blog.csdn.net/funnypython/article/details/78674977)

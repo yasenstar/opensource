@@ -8,20 +8,20 @@
 
 4. Thunderbird will attempt to automatically configure your account settings. This will fail and a message saying "Thunderbird failed to find the settings for your email account" will display. Enter the following settings:
 
-**Incoming**:
-- IMAP
-- **Server Hostname**: outlook.office365.com
-- **Port**: 993
-- **SSL**: SSL/TLS
-- **Authentication**: Normal password
+	**Incoming**:
+	- IMAP
+	- **Server Hostname**: outlook.office365.com
+	- **Port**: 993
+	- **SSL**: SSL/TLS
+	- **Authentication**: Normal password
 
-**Outgoing**:
-- **Server Hostname**: outlook.office365.com
-- **Port**: 465 or 587
-- **SSL**: SSL/TLS
-- **Authentication**: Normal password
+	**Outgoing**:
+	- **Server Hostname**: outlook.office365.com
+	- **Port**: 465 or 587
+	- **SSL**: SSL/TLS
+	- **Authentication**: Normal password
 
-**Username** (Incoming and Outgoing): your email address
+	**Username** (Incoming and Outgoing): your email address
 
 # Using Mailspring in Ubuntu
 

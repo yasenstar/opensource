@@ -8,28 +8,43 @@ Ubuntu Server Edition Usage Referenace
 
 sudo apt autoclean
 
-# 输入”uname -a “，显示电脑以及操作系统的相关信息
+# Network Area
+
+## Proxy (either HTTP Proxy or FTP Proxy) Setting
+
+清除已经设定的Proxy:
+unset http_proxy;
+unset ftp_proxy;
+
+Set and export the HTTP_PROXY variable:
+```
+export HTTP_PROXY=user:pass@my.proxy.server:8080
+```
+
+# About version or kernal information checking
+
+## 输入”uname -a “，显示电脑以及操作系统的相关信息
 
 ```
 yasen@yasen7240:~$ uname -a
 Linux yasen7240 4.13.0-21-generic #24-Ubuntu SMP Mon Dec 18 17:29:16 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux
 ```
 
-# 输入”cat /proc/version”，显示正在运行的内核版本
+## 输入”cat /proc/version”，显示正在运行的内核版本
 
 ```
 yasen@yasen7240:~$ cat /proc/version
 Linux version 4.13.0-21-generic (buildd@lgw01-amd64-037) (gcc version 7.2.0 (Ubuntu 7.2.0-8ubuntu3)) #24-Ubuntu SMP Mon Dec 18 17:29:16 UTC 2017
 ```
 
-# 输入”cat /etc/issue”, 显示系统发行版本信息
+## 输入”cat /etc/issue”, 显示系统发行版本信息
 
 ```
 yasen@yasen7240:~$ cat /etc/issue
 Ubuntu 17.10 \n \l
 ```
 
-# 输入”lsb_release -a”，显示系统的发行版的所有信息，比如发行版的ID，描述信息，具体版本，代号
+## 输入”lsb_release -a”，显示系统的发行版的所有信息，比如发行版的ID，描述信息，具体版本，代号
 
 ```
 yasen@yasen7240:~$ lsb_release -a
@@ -40,7 +55,7 @@ Release:	17.10
 Codename:	artful
 ```
 
-# 输入”cat /proc/cpuinfo”，显示cpu相关信息，包括型号、主频、内核信息等
+## 输入”cat /proc/cpuinfo”，显示cpu相关信息，包括型号、主频、内核信息等
 
 ```
 yasen@yasen7240:~$ cat /proc/cpuinfo
@@ -153,7 +168,9 @@ address sizes	: 39 bits physical, 48 bits virtual
 power management:
 ```
 
-# Ubuntu下查看CPU内存使用情况：top
+# About System Utilization
+
+## Ubuntu下查看CPU内存使用情况：top
 
   主要参数
   d：指定更新的间隔，以秒计算。
@@ -189,7 +206,7 @@ power management:
   M：根据使用内存大小进行排序。
   W：将当前设置写入~/.toprc文件中。这是写top配置文件的推荐方法。
 
-# 显示内存的使用情况: free
+## 显示内存的使用情况: free
 
 ```
 yasen@yasen7240:~$ free
@@ -210,7 +227,7 @@ Swap:       8294396       30908     8263488
   －t：显示内存总和列。
   －o：不显示缓冲区调节列。
 
-# uptime
+## uptime
 
 ```
 yasen@yasen7240:~$ uptime
@@ -223,7 +240,7 @@ yasen@yasen7240:~$ uptime
   最近一分钟，五分钟和十五分钟的系统负载
   参数： -V 显示版本资讯。
 
-# 磁盘活动情况: vmstat
+## 磁盘活动情况: vmstat
 
 ```
 yasen@yasen7240:~$ vmstat
@@ -237,7 +254,7 @@ procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----
   bo：表示每秒写到磁盘的块数（blocks/s）。数字越大，表示写磁盘的活动越多。
   wa：cpu等待磁盘I／O（未决的磁盘IO）的时间比例。数字越大，表示文件系统活动阻碍cpu的情况越严重，因为cpu在等待慢速的磁盘系统提供数据。wa为0是最理想的。如果wa经常大于10，可能文件系统就需要进行性能调整了。
 
-# 统计CPU的使用情况及tty设备、硬盘和CD-ROM的I/0量: iostat
+## 统计CPU的使用情况及tty设备、硬盘和CD-ROM的I/0量: iostat
 
 ```
 yasen@yasen7240:~$ iostat

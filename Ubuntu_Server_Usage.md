@@ -1,7 +1,3 @@
-Ubuntu Server Edition Usage Referenace
-
-目录
-
 # About APT
 
 ## 当有APT在后台更新时，如何强制停止此进程来运行新的 apt get 或者 apt upgrade?

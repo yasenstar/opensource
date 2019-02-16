@@ -6,19 +6,37 @@ Ubuntu Server Edition Usage Referenace
 
 ## 当有APT在后台更新时，如何强制停止此进程来运行新的 apt get 或者 apt upgrade?
 
+```
 sudo apt autoclean
+```
 
 # Network Area
 
 ## Proxy (either HTTP Proxy or FTP Proxy) Setting
 
-清除已经设定的Proxy:
-unset http_proxy;
-unset ftp_proxy;
-
 Set and export the HTTP_PROXY variable:
+
 ```
 export HTTP_PROXY=user:pass@my.proxy.server:8080
+```
+
+Set and export the HTTPS_PROXY variable:
+
+```
+export HTTPS_PROXY=user:pass@my.proxy.server:8081
+```
+
+Set and export the NO_PROXY variable to prevent local traffic from being sent to the proxy:
+
+```
+export NO_PROXY=localhost,127.0.0.1,*.my.lan.domain
+```
+
+清除已经设定的Proxy:
+
+```
+unset http_proxy;
+unset ftp_proxy;
 ```
 
 # About version or kernal information checking

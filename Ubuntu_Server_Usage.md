@@ -35,6 +35,22 @@ unset http_proxy;
 unset ftp_proxy;
 ```
 
+# Desktop Environment
+
+## "Budgie Desktop"
+
+Install Budgie Desktop:
+
+```
+sudo apt install budgie-desktop
+```
+
+Remove Budgie Desktop:
+
+```
+sudo apt remove budgie-desktop-environment budgie-desktop && sudo apt autoremove
+```
+
 # About version or kernal information checking
 
 ## 输入”uname -a “，显示电脑以及操作系统的相关信息

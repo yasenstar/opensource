@@ -1,6 +1,6 @@
 # Using Database
 
-## Tomcat: Installing Tomcat on macOS 10.14 Mojave
+## Tomcat: Installing Tomcat on macOS 10.14 Mojave  (date: 2019/09/19)
 
 Thanks Wolf Paulus @ https://wolfpaulus.com/mac/tomcat/
 
@@ -54,3 +54,16 @@ sudo chown -R <your_username> /Library/Tomcat
 sudo chmod +x /Library/Tomcat/bin/*.sh
 ```
 
+### Tomcat 9.x start and stop
+
+Using following start and stop scripts:
+```
+$ /Library/Tomcat/bin/startup.sh
+$ /Library/Tomcat/bin/shutdown.sh
+```
+
+Can also try "Activata's Tomcat Controller", but mine is pop up error message.
+
+### Finally, verify
+
+After your started Tomcat, open Mac's Web browser and take a look at the default page: http://localhost:8080

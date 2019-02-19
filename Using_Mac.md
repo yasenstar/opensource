@@ -32,5 +32,25 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 
 Here are the easy to follow steps to get it up and running on Mac.
 
-1. Download a binary distribution of the core module: apache-tomcat-9.0.16 from Apache website [here](http://tomcat.apache.org/download-90.cgi), pick the *tar.gz* in Binary Distributions ** */ Core* ** section.
-2. Opening (or using unarchiving) the archive file will create a new folder structure in Downloads folder
+1. Download a binary distribution of the core module: apache-tomcat-9.0.16 from Apache website [here](http://tomcat.apache.org/download-90.cgi), pick the *tar.gz* in Binary Distributions */ Core* section.
+2. Opening (or using unarchiving) the archive file will create a new folder structure in Downloads folder：
+   ～/Downloads/apache-tomcat-9.0.16
+3. Open to Terminal app to move the unarchived distribution to /usr/local
+```
+sudo mkdir -p /usr/local
+sudo mv ~/Downloads/apache-tomcat-9.0.16 /usr/local
+```
+4. To make it easy to replace this release with future releases, we are going to create a symbolic link that we are going to use when referring to Tomcat (after removing the old link, you might have from installing a previous version):
+```
+sudo rm -f /Library/Tomcat
+sudo ln -s /usr/local/apache-tomcat-9.0.16 /Library/Tomcat
+```
+5. Change ownership of the /Library/Tomcat foder hierarchy:
+```
+sudo chown -R <your_username> /Library/Tomcat
+```
+6. Make all scripts executable:
+```
+sudo chmod +x /Library/Tomcat/bin/*.sh
+```
+

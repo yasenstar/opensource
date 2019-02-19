@@ -32,5 +32,5 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 
 Here are the easy to follow steps to get it up and running on Mac.
 
-1. Download a binary distribution of the core module: apache-tomcat-9.0.16 from Apache website [here](http://tomcat.apache.org/download-90.cgi), pick the tar.gz in Binary Distributions / Core section.
-2. Opening (or using unarchiving)
+1. Download a binary distribution of the core module: apache-tomcat-9.0.16 from Apache website [here](http://tomcat.apache.org/download-90.cgi), pick the *tar.gz* in Binary Distributions ** */ Core* ** section.
+2. Opening (or using unarchiving) the archive file will create a new folder structure in Downloads folder

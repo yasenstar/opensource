@@ -51,6 +51,12 @@ Remove Budgie Desktop:
 sudo apt remove budgie-desktop-environment budgie-desktop && sudo apt autoremove
 ```
 
+# Web Servers
+
+## Install Tomcat
+
+https://www.digitalocean.com/community/tutorials/how-to-install-apache-tomcat-8-on-ubuntu-16-04
+
 # About version or kernal information checking
 
 ## 输入”uname -a “，显示电脑以及操作系统的相关信息

@@ -72,7 +72,8 @@ After your started Tomcat, open Mac's Web browser and take a look at the default
 
 在MAC上安装homebrew进行安装，根据react native 文档步骤进行下去，同样在brew update的时候出现报错：Error: /usr/local must be writable! 错误，文档也给出解决办法（sudo chown -R $(whoami) /usr/local），但是这种方法对于高版本的OS来说，是解决不了的，会报chown: /usr/local: Operation not permitted错误。
 
-后来在https://stackoverflow.com/questions/46459152/cant-chown-usr-local-for-homebrew-in-osx-10-13-high-sierra网页上给出了解决办法，下面简单总结一下：
+后来在https://stackoverflow.com/questions/46459152/cant-chown-usr-local-for-homebrew-in-osx-10-13-high-sierra
+网页上给出了解决办法，下面简单总结一下：
 
 先卸载已安装的homebrew，命令如下：
 

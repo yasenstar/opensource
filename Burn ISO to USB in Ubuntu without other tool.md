@@ -1,1 +1,1 @@
-# How to Buren ISO file to USB in Ubuntu without using other tool?
+# How to Burn ISO file to USB in Ubuntu without using other tool?

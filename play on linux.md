@@ -1,6 +1,8 @@
+# Play on Linux
+
 [TOC]
 
-# how to install chromium browser in linux (using APT)
+## how to install chromium browser in linux (using APT)
 
 在终端中依次运行如下命令：
 
@@ -18,7 +20,7 @@ Date: 2017/11/13, Beijing
 ---
 practice: 2017/11/13, installed on Dell Latitude E6410 with Ubuntu 17.10 64bit
 
-# how to install sublime-text in linux (using APT)
+## how to install sublime-text in linux (using APT)
 
 Go to Subblime-Text [official site](https://www.sublimetext.com)
 
@@ -59,3 +61,7 @@ Date: 2017/11/05, Beijing
 
 ---
 practice: 2017/11/13, installed on Dell Latitude E6410 with Ubuntu 17.10 64bit
+
+## Install Github Desktop
+
+you can get both deb and snap [github desktop package by skiftkey](https://github.com/shiftkey/desktop/releases)

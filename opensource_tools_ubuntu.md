@@ -14,8 +14,7 @@
 * filezilla: FTP client
 * GCompris: educational games
 
-* github-desktop: install may come from docker
-** (github desktop package)[https://github.com/shiftkey/desktop/releases]
+* github-desktop: install may come from docker: you can get both deb and snap (github desktop package)[https://github.com/shiftkey/desktop/releases]
 
 * GoLand: A clever IDE to Go
 * KTurtle: Educational Programming Environment

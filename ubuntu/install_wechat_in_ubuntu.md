@@ -1,4 +1,4 @@
-#Install WeChat on Ubuntu
+# Install WeChat on Ubuntu
 
 My Ubuntu is 20.04
 

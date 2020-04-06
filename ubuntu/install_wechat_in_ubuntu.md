@@ -2,9 +2,9 @@
 
 My Ubuntu is 20.04
 
-Thanks Ji M's Article
+Thanks for [Ji M's Article](http://ubuntuhandbook.org/index.php/2017/07/install-wechat-desktop-app-ubuntu-16-04-higher/)
 
-There's one open-source project, electronic-wechat, allow you to run WeChat on Linux & Mac OS.
+There's one open-source project, [electronic-wechat](https://github.com/geeeeeeeeek/electronic-wechat), allow you to run WeChat on Linux & Mac OS.
 
 The app is available via Snappy store for all Linux distributions, following are the steps:
 

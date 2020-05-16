@@ -1,3 +1,5 @@
+Date 2020-05-16
+
 I'm running on UOS with adding Ubuntu 20.04 source, facing below dependencies issue --
 
 Error Message:
@@ -51,4 +53,13 @@ sudo rm /var/lib/dpkg/info -r   # this line got error
 sudo mv /var/lib/dpkg/info_back /var/lib/dpkg/info
 ```
 
-Then run `$ sudo apt upgrade`, it works
+Then run `$ sudo apt upgrade`, it works on the installation,finally have one new error in the end:
+
+```
+正在解压 vpnc (0.5.3r550-3.1) 并覆盖 (0.5.3r550-3) ...
+在处理时有错误发生：
+ /tmp/apt-dpkg-install-2ddike/047-vim-tiny_2%3a8.1.2269-1ubuntu5_amd64.deb
+E: Sub-process /usr/bin/dpkg returned an error code (1)
+```
+
+run `$ sudo apt --fix-broken install`

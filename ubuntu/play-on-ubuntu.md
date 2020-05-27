@@ -12,19 +12,12 @@ First, install the following dependencies to install the VPN Client on Ubuntu. P
 
 ```
 apt-get install lib32z1
-
 apt-get install libc6-i386
-
 apt-get install libwebkitgtk-1.0-0:i386
-
 apt-get install libproxy1:i386
-
 apt-get install libproxy1-plugin-gsettings:i386
-
 apt-get install libproxy1-plugin-webkit:i386
-
 apt-get install libdconf1:i386
-
 apt-get install dconf-gsettings-backend:i386
 ```
 
@@ -32,9 +25,7 @@ Then, install Pulse Secure Client using the below steps:
 
 ```
 wget http://trial.pulsesecure.net/clients/ps-pulse-linux-5.3r1.0-b587-ubuntu-debian-installer.deb
-
 sudo dpkg -i ps-pulse-linux-5.3r1.0-b587-ubuntu-debian-installer.deb
-
 /usr/local/pulse/PulseClient.sh install_dependency_packages
 ```
 

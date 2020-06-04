@@ -355,6 +355,8 @@ apt-get install dconf-gsettings-backend:i386
 
 Then, install Pulse Secure Client using the below steps:
 
+go to <https://software.uconn.edu/pulse-secure-client-download/> for downloading the client
+
 ```
 wget http://trial.pulsesecure.net/clients/ps-pulse-linux-5.3r1.0-b587-ubuntu-debian-installer.deb
 sudo dpkg -i ps-pulse-linux-5.3r1.0-b587-ubuntu-debian-installer.deb

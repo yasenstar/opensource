@@ -18,6 +18,13 @@ Typical components of a kernel:
 
 kernel-space: the system state and memory space is collectively referred to as kernel-space.
 
+In Linux, each processor is doing one of 3 things at any given moments:
+
+1. In kernel-space, in process context, executing on behalf of a specific process
+2. In kernel-space, in interrupt context, not associated with a process, handling an interrupt
+3. In user-space, executing user code in a process
+
+
 ## 2. Getting Started with the Kernel
 
 ## 3. Process Management

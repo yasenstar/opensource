@@ -8,6 +8,11 @@ The Linux Kernel is the part of the Linux operating system which communicates di
 
 The initrd provides us with a way of loading the RAM disk by use of the boot loader.
 
+When the initrd is being used, the boot process takes the following sequence of steps:
+
+1. Boot loader loads kernel and initial RAM disk.
+2. 
+
 ## Kernel Development Tools
 
 ## Writing Linux Kernel Modules

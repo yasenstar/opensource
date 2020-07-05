@@ -11,8 +11,12 @@ Operating System vs. Kerner: Whereas the user interface is the outermost portion
 
 Typical components of a kernel:
 
-    - interrupt handlers to service interrupt requests
-    - 
+- interrupt handlers to service interrupt requests
+- a scheduler to share processor time among multiple processes
+- a memory management system to manage process address spaces
+- system services such as networking and interprocess communication
+
+kernel-space: the system state and memory space is collectively referred to as kernel-space.
 
 ## 2. Getting Started with the Kernel
 

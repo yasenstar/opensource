@@ -47,6 +47,8 @@ A Samba file server enables file sharing across different operating systems over
 
 My environment is Ubuntu 20.04.1 LTS, the command can be different to the RedHat server, but the theory is similar.
 
+#### Installing Samba
+
 To install Samba, we can run:
 
 ```
@@ -73,6 +75,43 @@ If you get following output, then it's OK:
 ```
 samba: /usr/sbin/samba /usr/lib/x86_64-linux-gnu/samba /etc/samba /usr/share/samba /usr/share/man/man7/samba.7.gz /usr/share/man/man8/samba.8.gz
 ```
+
+#### Setting Up Samba
+
+Now Samba is installed, we can create a directory in Linux server for it to share, this folder will be used for applications running on Linux server to consume the synced files later:
+
+```
+mkdir /home/<username>/sambashare
+```
+
+My share folder is `/home/yasen/Documents/testffs`, this is depending on the needs from applications.
+
+The configuration file for Samba is located at `/etc/samba/smb.conf`.
+
+To add the new directory as a share, we can edit this configuration file using any text editor:
+
+```
+sudo gedit /etc/samba/smb.conf
+```
+
+At the bottom of the file, add following lines:
+
+```
+# add one folder share to freefilesync testing
+[testffs]
+path = /home/yasen/Documents/testffs
+valid users = yasen
+read only = no
+browsable = yes
+```
+
+The meaning of we add above as:
+
+- comment: a brief decription of the share
+- path: the directory of the share to be used
+- valid users: can set the authorized user (later we need to add this user's permission)
+- read only: permission to modify the contents of the share folder is only granted when the value of this directive is `no`
+- browsable: when set to `yes`, file managers such as Ubuntu's default file manager will list this share under "Network"
 
 
 

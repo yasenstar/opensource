@@ -8,7 +8,7 @@ Instead of asking end user to upload file to Linux Server file system, our previ
 
 ## Solution Illustration
 
-![image-20200825172658269](C:\Users\v0cn037\AppData\Roaming\Typora\typora-user-images\image-20200825172658269.png)
+![image-20200825172658269](images\image-20200825172658269.png)
 
 Key elements to be considered:
 
@@ -25,19 +25,19 @@ Key elements to be considered:
 
 Come to website: https://freefilesync.org/
 
-![image-20200825173228269](C:\Users\v0cn037\AppData\Roaming\Typora\typora-user-images\image-20200825173228269.png)
+![image-20200825173228269](images\image-20200825173228269.png)
 
 Choose Download, then select the Windows version:
 
-![image-20200825173318471](C:\Users\v0cn037\AppData\Roaming\Typora\typora-user-images\image-20200825173318471.png)
+![image-20200825173318471](images\image-20200825173318471.png)
 
 After installing, you should see below window when run the freefilesync application:
 
-![image-20200825173513645](C:\Users\v0cn037\AppData\Roaming\Typora\typora-user-images\image-20200825173513645.png)
+![image-20200825173513645](images\image-20200825173513645.png)
 
 Note there are four options to the destination side:
 
-![image-20200825173551120](C:\Users\v0cn037\AppData\Roaming\Typora\typora-user-images\image-20200825173551120.png)
+![image-20200825173551120](images\image-20200825173551120.png)
 
 In our scenario, we can choose "Mirror" instead of default "Two way".
 

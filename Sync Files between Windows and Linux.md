@@ -43,5 +43,38 @@ In our scenario, we can choose "Mirror" instead of default "Two way".
 
 ### Install samba server on Linux Server (using Ubuntu as example)
 
+A Samba file server enables file sharing across different operating systems over a network.
+
+My environment is Ubuntu 20.04.1 LTS, the command can be different to the RedHat server, but the theory is similar.
+
+To install Samba, we can run:
+
+```
+sudo apt update
+sudo apt install samba
+```
+
+Check Samba version:
+
+```
+samba --version
+```
+
+My result is "Version 4.11.6-Ubuntu"
+
+Check if the installation was successful by running:
+
+```
+whereis samba
+```
+
+If you get following output, then it's OK:
+
+```
+samba: /usr/sbin/samba /usr/lib/x86_64-linux-gnu/samba /etc/samba /usr/share/samba /usr/share/man/man7/samba.7.gz /usr/share/man/man8/samba.8.gz
+```
+
+
+
 ## Synchronization Configuration
 

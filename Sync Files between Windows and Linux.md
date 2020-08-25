@@ -113,6 +113,52 @@ The meaning of we add above as:
 - read only: permission to modify the contents of the share folder is only granted when the value of this directive is `no`
 - browsable: when set to `yes`, file managers such as Ubuntu's default file manager will list this share under "Network"
 
+Restart Samba for new share to take effect:
+
+```
+sudo service smbd restart
+```
+
+If needed, update firewall rules to allow Samba traffic:
+
+```
+sudo ufw allow samba
+```
+
+#### Setting up User Accounts for Samba
+
+As we put user name `yasen` as the valid user, we need to set up a Samba password for the user account. (the reason is Samba doesn't use the system account password).
+
+```
+sudo smbpasswd -a username
+```
+
+Here you can change `username` to the one you want to set.
+
+Note: username used must belong to a system account, else it won't save.
+
+#### Connecting to Share
+
+On Ubuntu: Open up the default file manager and click _Connect to Server_ then enter:
+
+```
+smb://ip-address/sambashare
+```
+
+On macOS: in the finder menu, click _Go > Connect to Server_ then enter:
+
+```
+smb://ip-address/sambashare
+```
+
+On Windows, open up File Manager and edit the file path to:
+
+```
+\\ip-address\sambashare
+```
+
+You can just keep this way for later FreeFileSync configuration, or it's also OK to map this network path to one pre-defined local drive number, e.g. Z:
+
 
 
 ## Synchronization Configuration

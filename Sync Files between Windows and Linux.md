@@ -163,3 +163,21 @@ You can just keep this way for later FreeFileSync configuration, or it's also OK
 
 ## Synchronization Configuration
 
+Now back to Windows Server, open the FreeFileSync:
+
+- In the Source (left): browse and choose the folder that Document Manager is using to store the user upload files
+- In the Destination (right): as above, key in `\\ip-address\sambashare`, since I've configured workgroup from Linux server side, it can use the host name in the network share, e.g. `\\montreal\testffs`
+- Change the Synchronization direction to one-way Mirror
+
+You should see like below:
+
+![image-20200825182555545](images/image-20200825182555545.png)
+
+You can press `Compare` then `Synchronize` to perform one manually sync, if that's running smoothly, click `Save as...` to save that as a Batch Job:
+
+![image-20200825182938651](images/image-20200825182938651.png)
+
+For example, I save into the file name as `BatchRun_testffs.ffs_batch`.
+
+Open the ReadTimeSync app:
+

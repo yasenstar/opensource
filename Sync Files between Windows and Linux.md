@@ -179,5 +179,8 @@ You can press `Compare` then `Synchronize` to perform one manually sync, if that
 
 For example, I save into the file name as `BatchRun_testffs.ffs_batch`.
 
-Open the ReadTimeSync app:
+Open the RealTimeSync app, instead of key in Folder and Command, simply import the batch file created in previous step:
 
+![image-20200825183341227](images/image-20200825183341227.png)
+
+You can then click `Start` to let RealTimeSync running in background.

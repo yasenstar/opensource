@@ -1,2 +1,2 @@
 # opensource
-information about myself learning and practice on opensource world
+information about learning and practice on opensource world

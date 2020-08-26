@@ -1,5 +1,7 @@
 # Sync Files between Windows and Linux
 
+[TOC]
+
 ## Background
 
 We're facing one need that the application is running on one Linux (RedHat) server for report analysis, the ETL tool _Kettle_ expect to read source file uploaded to one local folder.

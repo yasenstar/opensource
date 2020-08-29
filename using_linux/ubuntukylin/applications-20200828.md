@@ -1,5 +1,9 @@
 # app list in ubuntukylin
 
+[TOC]
+
+## date: 20200828
+
 below is the day one list after installing:
 
 ```
@@ -121,3 +125,4 @@ yelp
 ```
 
 will add more information later...
+

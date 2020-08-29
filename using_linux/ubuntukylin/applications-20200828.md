@@ -1,3 +1,8 @@
+# app list in ubuntukylin
+
+below is the day one list after installing:
+
+```
 apport-gtk
 bamf-2.index
 blueman-adapters
@@ -113,3 +118,4 @@ wps-office-wps
 xdiagnose
 XMind
 yelp
+```
